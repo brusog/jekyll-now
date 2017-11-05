@@ -10,7 +10,7 @@ title: How to setup a High Availability Redis cluster.![Icon representing Redis]
 ### This article is applicable for Redis 3.0 and above. Redis introduces a concept of _Sentinel_ which helps achieve High Availability. 
 
 #### What is a Sentinel?
-![Image of a guard Dog](/images/dog-security-guard.jpg)
+![Image of a guard Dog](../images/dog-security-guard.jpg)
 
 - I like to think of Sentinel as a **Watchman**. Someone who keeps a watch on a running Redis server. Sentinel is actually a Redis server which is run with the ```--sentinel flag```. We can start the regular redis server by firing ```redis-server nameOfConfigfile.conf```. When we want to start a _Sentinel_ we will issue a command ```redis-server pathToSentinelConfig.conf --sentinel ```
 
