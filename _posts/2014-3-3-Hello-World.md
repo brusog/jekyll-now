@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ![Icon representing Redis](https://redis.io/images/redis-white.png)How to setup a High Availability Redis cluster
+title: How to setup a High Availability Redis cluster.![Icon representing Redis](https://redis.io/images/redis-white.png)
 ---
 
 ## In this blog we will go through the steps to setup a [Redis](https://redis.io/) cluster with High Availability.
