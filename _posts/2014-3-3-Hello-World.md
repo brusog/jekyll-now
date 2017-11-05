@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Welcome to the Jekyll based blog!
+title: How to setup a High Availability Redis cluster
 ---
+![Icon representing Redis](https://redis.io/images/redis-white.png)
+## In this blog we will go through the steps to setup a [Redis](https://redis.io/) cluster with High Availability
+---
+### Redis is an in-memory datastore. When multiple instances of an application want to share data with each other, Redis can be a viable alternative. 
+---
+### This article is applicable for Redis 3.0 and above. Redis introduces a concept of _Sentinel_ which helps achieve High Availability. 
 
-### Next you can update your site name, avatar and other options using the _config.yml file in the *root* of your repository (shown below)//.
-
-
-1. Install the markdown package on sublime
-2. Make changes to the file in sublime
--push them to git 
--commit to the forked repo
--refresh your user page..
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+#### What is a Sentinel:
+- I like to think of Sentinel as a **Watchman**. Someone who keeps a watch on a running Redis server. Sentinel is actually a Redis server which is run with the ```--sentinel flag```. We can start the regular redis server by firing ```redis-server nameOfConfigfile.conf```. When we want to start a _Sentinel_ we will issue a command ```redis-server pathToSentinelConfig.conf --sentinel ```
