@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to setup a High Availability Redis cluster.![Icon representing Redis](https://redis.io/images/redis-white.png)
+title: How to setup a High Availability Redis cluster.
 ---
 
-## In this blog we will go through the steps to setup a [Redis](https://redis.io/) cluster with High Availability.
+## In this blog we will go through the steps to setup a [Redis](https://redis.io/) cluster (3.0+) on Windows with High Availability.![Icon representing Redis](https://redis.io/images/redis-white.png)
 ---
 ### Redis is an in-memory datastore. When multiple instances of an application want to share data with each other, Redis can be a viable alternative. 
 ---
-### This article is applicable for Redis 3.0 and above. Redis introduces a concept of _Sentinel_ which helps achieve High Availability. 
+### Redis introduces a concept of _Sentinel_ which helps achieve High Availability. 
 
 #### What is a Sentinel?
 ![Image of a guard Dog](../images/dog-security-guard.jpg)
