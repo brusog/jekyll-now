@@ -23,5 +23,5 @@ title: How to setup a High Availability Redis cluster.
 
 - When a particular Redis server fails( goes down):
   -  Sentinels decide that the current Redis Server which is a master has gone down. Just as there is a concept of quorum in elections, there is a _quorum_ while evaluating if the Redis master is down.
-  -  Sentinels start a process called as _electing the new master_ where an exist slave is promoted to a master and other slaves are configured to talk to this newly elected master.
-  -  Informs the currently connected clients about the newly elected master.
+  -  Sentinels start a process called as _electing the new master_ where an existing slave is promoted to a master and other slaves are configured to talk to this newly elected master.
+  
